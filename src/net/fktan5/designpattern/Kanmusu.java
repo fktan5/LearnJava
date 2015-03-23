@@ -5,11 +5,13 @@ package net.fktan5.designpattern;
  * Created by nakamura on 15/03/11.
  */
 public class Kanmusu {
+    //BaseInfo
     private String name;
     private String shipType;
     private String shipSpecies;
-    private int endurance;
-    private int armor;
+    private String rarity;
+
+    private KanmusuParameters mKanmusuParameters;
 
     public Kanmusu() {
     }
@@ -18,8 +20,6 @@ public class Kanmusu {
         this.name = builder.name;
         this.shipSpecies = builder.shipSpecies;
         this.shipType = builder.shipType;
-        this.endurance = builder.endurance;
-        this.armor = builder.armor;
     }
 
     public String getInfo() {
